@@ -36,3 +36,4 @@ MonoBehaviour:
     failOperation: 0
     zFailOperation: 0
   m_ShadowTransparentReceive: 1
+  m_TestSerializeField: 42

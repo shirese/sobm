@@ -57,7 +57,7 @@ namespace UnityEngine.Rendering.Universal
 
         public ForwardRenderer(ForwardRendererData data) : base(data)
         {
-            HandleLog("[ForwardRenderer] No serializedfield");
+            HandleLog("[ForwardRenderer] " + data.testSerializeField.ToString());
             m_BlitMaterial = CoreUtils.CreateEngineMaterial(data.shaders.blitPS);
             m_CopyDepthMaterial = CoreUtils.CreateEngineMaterial(data.shaders.copyDepthPS);
             m_SamplingMaterial = CoreUtils.CreateEngineMaterial(data.shaders.samplingPS);
@@ -114,7 +114,6 @@ namespace UnityEngine.Rendering.Universal
                 cameraStacking = true,
             };
         }
-
         private void HandleLog(string stackTrace)
         {
             System.IO.File.WriteAllText(@"C:\Users\chaueur\Desktop\testlog\log.txt", stackTrace);
