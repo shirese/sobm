@@ -1,0 +1,11 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/.idea.sobm.iml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../:\sobm_project\sobm\.idea\.idea.sobm\.idea/dataSources/
+/dataSources.local.xml
