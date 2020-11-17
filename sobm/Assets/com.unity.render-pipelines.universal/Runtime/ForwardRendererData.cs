@@ -132,16 +132,6 @@ namespace UnityEngine.Rendering.Universal
             }
         }
 
-        public int testSerializeField
-        {
-            get => m_TestSerializeField;
-            set
-            {
-                SetDirty();
-                m_TestSerializeField = value;
-            }
-        }
-
         protected override void OnEnable()
         {
             base.OnEnable();
