@@ -1,4 +1,5 @@
 @echo off 
+if not exist %USERPROFILE%\Desktop\testlog mkdir %USERPROFILE%\Desktop\testlog
 git checkout no_serializedfield
 
 CALL :Build
@@ -24,4 +25,4 @@ echo.
 echo =====================================
 echo.
 taskkill /f /im sobm.exe
-del /S /Q %USERPROFILE%\Desktop\testlog\log.txt
+@RD /S /Q %USERPROFILE%\Desktop\testlog
