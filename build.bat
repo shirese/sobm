@@ -15,7 +15,7 @@ CALL :Build
 git checkout master
 
 :Build
-start /b /wait "dummy " "C:\Program Files\Unity\Hub\Editor\2019.4.3f1\Editor\Unity.exe" -quit -batchmode -projectPath ".\sobm" -buildWindows64Player ./Builds/sobm.exe
+start /b /wait "dummy " "C:\Program Files\Unity\Hub\Editor\2019.4.23f1\Editor\Unity.exe" -quit -batchmode -projectPath ".\sobm" -buildWindows64Player ./Builds/sobm.exe
 start /min .\sobm\Builds\sobm.exe
 timeout 6 >nul
 echo.
@@ -25,4 +25,3 @@ echo.
 echo =====================================
 echo.
 taskkill /f /im sobm.exe
-@RD /S /Q %USERPROFILE%\Desktop\testlog
